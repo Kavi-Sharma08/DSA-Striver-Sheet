@@ -4,10 +4,6 @@ using namespace std;
 class Solution {
 public:
     void moveZeroes(vector<int>& nums) {
-        int count = 0 ;
-        for(int i : nums){
-            i == 0 ? count++ : count  ;
-        }
         int i = 0 ;
         for(int j = 0 ; j < nums.size() ; j++){
             if(nums[j] != 0 ){
@@ -17,3 +13,10 @@ public:
         }
     }
 };
+
+int main() {
+    vector<int> nums = {0,1,0,3,12};
+    Solution obj;
+
+    obj.moveZeroes(nums);
+}
