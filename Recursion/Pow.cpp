@@ -14,7 +14,6 @@ public:
         double power = pow( n , k / 2);
 
         power = power*power;
-        cout<<power<<endl;
 
         if(k % 2 == 1){
             power = power * n;
@@ -29,14 +28,13 @@ public:
             x = -x;
             n = 1/n;
         }
-        cout<<n<<" "<<k<<endl;
         return pow(n , x );
     }
 };
 
 int main(){
     Solution obj;
-    cout<<obj.myPow(2 , -2);
+    cout<<obj.myPow(5 , 25);
     
 
 }
