@@ -4,12 +4,11 @@ using namespace std;
 class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
-        set<vector<int>> st;
         vector<vector<int>> ans1;
         sort(nums.begin() , nums.end());
         int n = nums.size();
 
-        for(int i = 0 ; i < nums.size() ; i++){
+        for(int i = 0 ; i < nums.size()-2 ; i++){
             if(i!=0 && nums[i] == nums[i-1]) continue;
             int target = -nums[i];
             int j = i+1 , k = n -1 ;
